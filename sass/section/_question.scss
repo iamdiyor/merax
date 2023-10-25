@@ -1,0 +1,60 @@
+.question {
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  &__title {
+    h3 {
+      color: #444;
+      font-family: $poppins;
+      font-size: 46px;
+      font-weight: 600;
+    }
+    p {
+      max-width: 700px;
+      color: #979797;
+      font-family: $poppins;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__input {
+    display: flex;
+    min-width: 35%;
+    padding: 36px 46px;
+    flex-direction: column;
+    border-radius: 20px;
+    background: #f0f0f0;
+    gap: 24px;
+  }
+
+  &__input-name,
+  &__input-number{
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #d0d0d0;
+    background: #fff;
+  }
+
+  &__input-name,
+  &__input-number:focus-visible{
+    color: #979797;
+    border-color: #d0d0d0;
+  }
+
+  &__btn {
+    border-radius: 10px;
+    font-family: $poppins;
+    font-size: 18px;
+    padding: 10px 16px;
+    background-color: #01bd80;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}

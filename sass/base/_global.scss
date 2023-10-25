@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  max-width: 1260px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #fcfcfcfc;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: $inter;
+}
+
+.main {
+  flex: 1 1 auto;
+}

@@ -1,0 +1,20 @@
+.title-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 67px;
+  h1 {
+    font-family: $inter;
+    font-size: 36px;
+    font-weight: 700;
+    background: linear-gradient(
+      90deg,
+      #01bd80 1.91%,
+      rgba(0, 92, 62, 0.48) 52.49%,
+      rgba(14, 89, 121, 0.81) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

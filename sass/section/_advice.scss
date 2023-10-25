@@ -1,0 +1,36 @@
+.advice {
+  margin-bottom: 60px;
+  &__box {
+    padding: 36px;
+    border-radius: 20px;
+    background: linear-gradient(
+      270deg,
+      #01bd80 0%,
+      #f0f0f0 44.05%,
+      #f0f0f0 100%
+    );
+  }
+  &__title {
+    padding-bottom: 16px;
+    color: #444;
+    font-family: $poppins;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  &__subtitle {
+    padding-bottom: 20px;
+    color: #979797;
+    font-family: $poppins;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__btn {
+    border-radius: 10px;
+    padding: 10px 16px;
+    background-color: #01bd80;
+    color: #fff;
+    font-family: $poppins;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
