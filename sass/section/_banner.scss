@@ -15,7 +15,7 @@
     h1 {
       color: #444;
       font-family: $poppins;
-      font-size: 46px;
+      @include adaptiveValue("font-size", 46, 23);
       font-weight: 600;
       margin-bottom: 16px;
     }
@@ -40,6 +40,9 @@
   }
 
   &__main {
+    max-width: 342px;
+    max-height: 317px;
+    position: relative;
     border-radius: 20px;
     border: 1px solid #01bd80;
     background-color: #f8f8f8;
@@ -50,7 +53,7 @@
   }
   &__main-img {
     max-height: 55px;
-    margin-top: 100px;
+    margin-top: 102px;
     margin-bottom: 80px;
     img {
       width: 100%;
@@ -79,4 +82,106 @@
     font-weight: 600;
     line-height: normal;
   }
+
+  // banner chetdaki iconkalar
+
+  &__staff-img {
+    position: absolute;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    padding: 9px 24px 9px 8px;
+    display: flex;
+    align-content: center;
+    max-width: 185px;
+    max-height: 52px;
+  }
+
+  &__staff-img-3d {
+    border-radius: 8px;
+    background: #b901bd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 36px;
+    padding-inline: 5px;
+    margin-right: 12px;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__staffs-img {
+    border-radius: 12px;
+    border: 2px solid #89d68c;
+    background: url(<path-to-image>),
+      lightgray 0px -1.927px / 100% 150% no-repeat;
+    box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__heart-img {
+    position: absolute;
+    max-width: 80px;
+    max-height: 80px;
+    top: 230px;
+    right: -45px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__staff-text {
+    color: #444;
+    font-family: $inter;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+.staff-first {
+  right: -32px;
+  top: 41px;
+}
+.staff-secondary {
+  right: -9px;
+  top: 91px;
+  border-color: #ff9900;
+}
+.staff-third {
+  top: 141px;
+  right: -32px;
+  border-color: #11fff1;
+}
+.staff-fourth {
+  top: 191px;
+  right: -32px;
+  border-color: #a642a8;
+}
+
+.icon-text-right {
+  top: -22px;
+  right: 26px;
+}
+
+.icon-text-left {
+  bottom: 80px;
+  left: -116px;
+}
+
+.icon-img-left {
+  background: #feba0d !important;
 }

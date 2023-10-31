@@ -3,3 +3,14 @@
   align-items: center;
   justify-content: space-between;
 }
+
+@mixin adaptiveValue($property, $startSize, $endSize) {
+  #{$property}: #{$startSize + px};
+
+  @media screen and (max-width: 1480px) {
+    #{$property}: calc(
+      #{$endSize + px} + #{$startSize - $endSize} *
+        ((100vw - 370px) / #{1480 - 370})
+    );
+  }
+}

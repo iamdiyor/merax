@@ -208,6 +208,14 @@ header .header__advice {
   font-weight: 600;
   margin-bottom: 16px;
 }
+@media screen and (max-width: 1480px) {
+  .banner__title h1 {
+    font-size: calc(
+      23px + 23 *
+        ((100vw - 370px) / 1110)
+    );
+  }
+}
 .banner__title p {
   color: #4d4d4d;
   font-family: "Inter", sans-serif;
@@ -226,13 +234,16 @@ header .header__advice {
   background: #444;
 }
 .banner__main {
+  max-width: 342px;
+  max-height: 317px;
+  position: relative;
   border-radius: 20px;
   border: 1px solid #01bd80;
   background-color: #f8f8f8;
 }
 .banner__main-img {
   max-height: 55px;
-  margin-top: 100px;
+  margin-top: 102px;
   margin-bottom: 80px;
 }
 .banner__main-img img {
@@ -260,6 +271,102 @@ header .header__advice {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+.banner__staff-img {
+  position: absolute;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  padding: 9px 24px 9px 8px;
+  display: flex;
+  align-content: center;
+  max-width: 185px;
+  max-height: 52px;
+}
+.banner__staff-img-3d {
+  border-radius: 8px;
+  background: #b901bd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 36px;
+  padding-inline: 5px;
+  margin-right: 12px;
+}
+.banner__staff-img-3d img {
+  width: 30px;
+  height: 30px;
+}
+.banner__staffs-img {
+  border-radius: 12px;
+  border: 2px solid #89d68c;
+  background: url(<path-to-image>), lightgray 0px -1.927px/100% 150% no-repeat;
+  box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 41px;
+  height: 41px;
+  position: absolute;
+  overflow: hidden;
+}
+.banner__staffs-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner__heart-img {
+  position: absolute;
+  max-width: 80px;
+  max-height: 80px;
+  top: 230px;
+  right: -45px;
+}
+.banner__heart-img img {
+  width: 100%;
+  height: 100%;
+}
+.banner__staff-text {
+  color: #444;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.staff-first {
+  right: -32px;
+  top: 41px;
+}
+
+.staff-secondary {
+  right: -9px;
+  top: 91px;
+  border-color: #ff9900;
+}
+
+.staff-third {
+  top: 141px;
+  right: -32px;
+  border-color: #11fff1;
+}
+
+.staff-fourth {
+  top: 191px;
+  right: -32px;
+  border-color: #a642a8;
+}
+
+.icon-text-right {
+  top: -22px;
+  right: 26px;
+}
+
+.icon-text-left {
+  bottom: 80px;
+  left: -116px;
+}
+
+.icon-img-left {
+  background: #feba0d !important;
 }
 
 .about-us {
