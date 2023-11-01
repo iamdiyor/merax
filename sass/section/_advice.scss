@@ -1,14 +1,11 @@
 .advice {
   margin-bottom: 60px;
   &__box {
+    display: flex;
+    gap: 100px;
     padding: 36px;
     border-radius: 20px;
-    background: linear-gradient(
-      270deg,
-      #01bd80 0%,
-      #f0f0f0 44.05%,
-      #f0f0f0 100%
-    );
+    background: linear-gradient(#f0f0f0 44.05%, #f0f0f0 100%);
   }
   &__title {
     padding-bottom: 16px;
